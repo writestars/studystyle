@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/default.css')
+  link(rel='stylesheet' href='./css/main.css')
+.container
+  section#main.mx-auto.my-5.py-5.px-3
+    h1 나의 공부 유형은?
+    .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
+      img.img-fluid(src='https://media.istockphoto.com/vectors/tiny-man-medical-intern-in-white-robe-work-on-laptop-sitting-on-huge-vector-id1282216370?b=1&k=20&m=1282216370&s=170667a&w=0&h=Pu69KwbnWqgYK34lesPhjdim0j_v7pisl9XbR_vmFfo=' alt='mainImage')
+    p
+      | 나의 공부유형을 알아봅시다.
+      br
+      |         아래 Get started 버튼을 눌러 시작하여 주십시오.
+    a(href='http://localhost:3000/question1')
+      button.btn.btn-outline-danger.mt-3(type='button' onclick='js:begin()') Get started
+  section#qna
+    .status.mx-auto.mt-5
+      .statusBar
+    .qBox.my-5.py-3.mx-auto
+    .answerBox
+  section#result
+  script(src='./js/data.js' charset='utf-8')
+  script(src='./js/start.js' charset='utf-8')
