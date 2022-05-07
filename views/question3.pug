@@ -13,6 +13,7 @@ head
   section#main.mx-auto.my-5.py-5.px-3
     h1 너 시험 잘 칠 것 같아?
     .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
-    a(href='http://localhost:3000/question4')
+    a(href=`http://localhost:3000/question4?point=${point+1}`)
       button.btn.btn-primary.btn-lg.btn-block(type='button') 아니 개망했어
+    a(href=`http://localhost:3000/question4?point=${point+2}`)
       button.btn.btn-secondary.btn-lg.btn-block(type='button') 시험 다 바르지

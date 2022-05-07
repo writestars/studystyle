@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('question3');
+  const point = parseInt(req.query.point);
+  res.render('question3',{point:point});
 });
 
 module.exports = router;

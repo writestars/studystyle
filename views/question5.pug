@@ -13,6 +13,7 @@ head
   section#main.mx-auto.my-5.py-5.px-3
     h1 시험을 망쳤을 때 나는?
     .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
-    a(href='http://localhost:3000/result1')
+    a(href=`http://localhost:3000/loding?point=${point+1}`)
       button.btn.btn-primary.btn-lg.btn-block(type='button') 에라 모르겠다 하고 논다
+    a(href=`http://localhost:3000/loding?point=${point+2}`)
       button.btn.btn-secondary.btn-lg.btn-block(type='button') 울며 다음 시험을 계획한다

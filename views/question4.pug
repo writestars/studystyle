@@ -13,6 +13,7 @@ head
   section#main.mx-auto.my-5.py-5.px-3
     h1 너 시험 공부 어떻게 해?
     .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
-    a(href='http://localhost:3000/question5')
+    a(href=`http://localhost:3000/question5?point=${point+1}`)
       button.btn.btn-primary.btn-lg.btn-block(type='button') 그냥 하는 거 아니야?
+    a(href=`http://localhost:3000/question5?point=${point+2}`)
       button.btn.btn-secondary.btn-lg.btn-block(type='button') 계획표를 보여준다
