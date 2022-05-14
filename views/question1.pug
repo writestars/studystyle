@@ -1,19 +1,12 @@
-doctype html
-head
-  style.
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
+extends layout
+
+block content
   title
-  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
-  link(rel='preconnect' href='https://fonts.gstatic.com')
-  link(href='https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap' rel='stylesheet')
   link(rel='stylesheet' href='./css/default.css')
   link(rel='stylesheet' href='./css/main.css')
-.container
-  section#main.mx-auto.my-5.py-5.px-3
-    h1 시험 일주일 전 나는?
-    .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
+  section(id='main' class ='mx-auto my-5 py-5 px-3')
+    h1(class = ' col-lg-6 col-md-8 col-sm-10 col-12 mx-auto') 시험 일주일 전 나는?
     a(href='http://localhost:3000/question2?point=1')
-      button.btn.btn-primary.btn-lg.btn-block(type='button') 딴 생각한다
+      button(class='btn btn-primary btn-lg btn-block' type='button') 딴 생각한다
     a(href='http://localhost:3000/question2?point=2')
-      button.btn.btn-secondary.btn-lg.btn-block(type='button') 그냥 빡공한다
+      button(class='btn btn-secondary btn-lg btn-block' type='button') 그냥 빡공한다

@@ -12,9 +12,6 @@ var question2Router = require('./routes/question2');
 var question3Router = require('./routes/question3');
 var question4Router = require('./routes/question4');
 var question5Router = require('./routes/question5');
-var result1Router = require('./routes/result1');
-var result2Router = require('./routes/result2');
-var result3Router = require('./routes/result3');
 var lodingRouter = require('./routes/loding');
 
 var app = express();
@@ -37,9 +34,6 @@ app.use('/question2', question2Router);
 app.use('/question3', question3Router);
 app.use('/question4', question4Router);
 app.use('/question5', question5Router);
-app.use('/result1', result1Router);
-app.use('/result2', result2Router);
-app.use('/result3', result3Router);
 app.use('/loding', lodingRouter);
 
 

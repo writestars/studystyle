@@ -1,29 +1,15 @@
-doctype html
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  title
-  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
-  link(rel='preconnect' href='https://fonts.gstatic.com')
-  link(href='https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/default.css')
-  link(rel='stylesheet' href='./css/main.css')
-.container
-  section#main.mx-auto.my-5.py-5.px-3
-    h1 나의 공부 유형은?
-    .col-lg-6.col-md-8.col-sm-10.col-12.mx-auto
-      img.img-fluid(src='https://cdn.pixabay.com/photo/2018/02/23/19/40/student-3176407_960_720.png')
-    p
-      | 나의 공부유형을 알아봅시다.
-      br
-      |         아래 Get started 버튼을 눌러 시작하여 주십시오.
+extends layout
+
+block content
+  section(id="main" class='mx-auto my-5 py-2 px-3')
+    h1(class=' col-lg-6 col-md-8 col-sm-10 col-12 mx-auto') 나의 공부 유형은?
+    img(src='/images/style1.png' class='start-img')
+    p 나의 공부유형을 알아봅시다.
+    br
+    p 아래 Get started 버튼을 눌러 시작하여 주십시오.
     a(href='http://localhost:3000/question1')
-      button.btn.btn-outline-danger.mt-3(type='button' onclick='js:begin()') Get started
-  section#qna
-    .status.mx-auto.mt-5
-      .statusBar
-    .qBox.my-5.py-3.mx-auto
-    .answerBox
-  section#result
-  script(src='./js/data.js' charset='utf-8')
-  script(src='./js/start.js' charset='utf-8')
+      button(type='button' onclick='js:begin()' class = ' btn btn-outline-danger mt-3') Get started
+  section(class=' status mx-auto mt-5 statusBar qBox my-5 py-3 mx-auto answerBox')
+    
+  section(id='result')
+

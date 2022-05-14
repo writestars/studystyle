@@ -1,4 +1,14 @@
-doctype html
-head
-button(type='button' name='button')
-  | 결과 확인하기
+extends layout
+
+block content
+  if point  < 7
+    img(src='/images/r3.png' class='result-img')
+  else if point < 9
+    img(src='/images/r2.png' class='result-img')
+  else 
+    img(src='/images/r1.png' class='result-img')
+  p
+  p
+  p
+  a(href='http://localhost:3000/style1')
+   button(type='button' onclick='js:begin()' class = ' btn btn-outline-danger mt-3') 다시 검사해보기
